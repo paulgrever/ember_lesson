@@ -6,7 +6,9 @@ export default Ember.Controller.extend({
   body: null, 
   actions: {
     addNewIdea: function() {
-      console.log("hi")
+      let title = this.get('title'); 
+      let body = this.get('body');
+      console.log(title, body);
     }
   }
 });
