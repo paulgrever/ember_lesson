@@ -7,5 +7,11 @@ let Idea =  DS.Model.extend({
   
 });
 
+Idea.reopenClass({
+  FIXTURES:[
+    {id: 1, title: "First idea", body: "First body"},
+    {id: 2, title: "Second idea", body: "Second body"}
+  ]
+});
 
 export default Idea;
