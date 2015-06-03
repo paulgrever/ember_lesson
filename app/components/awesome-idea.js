@@ -2,8 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+  editing: false, 
+
   actions: {
-    deleteIdea: function() {
+    delete: function() {
       this.get('idea').destroyRecord();
     }
   }
