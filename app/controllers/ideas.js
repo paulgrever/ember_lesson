@@ -6,9 +6,8 @@ export default Ember.Controller.extend({
   body: null, 
   actions: {
     addNewIdea: function() {
-      let title = this.get('title'); 
-      let body = this.get('body');
-      console.log(title, body);
+      let idea = this.getProperties('title', 'body');
+      this.store.createRecord('idea', idea).save();
     }
   }
 });
