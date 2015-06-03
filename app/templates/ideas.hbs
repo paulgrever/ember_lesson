@@ -1,2 +1,12 @@
 <h3>These are your great, great ideas. </h3>
+
+<section id="ideas">
+  {{#each model as |idea| }}
+    <div class="idea">
+      <h2>{{idea.title}}</h2>
+      <p>{{idea.body}}</p>
+    </div>
+  {{/each}}
+</section>
+
 {{outlet}}
